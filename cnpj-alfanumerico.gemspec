@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.description = "Implementa o calculo do digito verificador do CNPJ alfanumerico conforme a Receita Federal, mantendo compatibilidade com CNPJ numerico."
   spec.homepage = "https://github.com/miguelcarloshonorio/cpnj_ruby_2026"
   spec.license = "MIT"
-  spec.required_ruby_version = ">= 3.0.0"
+  spec.required_ruby_version = ">= 2.7.6"
 
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = spec.homepage
