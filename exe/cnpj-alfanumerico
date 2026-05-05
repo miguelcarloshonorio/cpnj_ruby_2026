@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "json"
+require_relative "../lib/cnpj-alfanumerico"
+
+command = ARGV.shift
+value = ARGV.shift
+
+case command
+when "validate"
+  puts Cnpj::Alfanumerico.valid?(value)
+when "generate"
+  puts Cnpj::Alfanumerico.generate(value)
+when "format"
+  puts Cnpj::Alfanumerico.format(value)
+when "split"
+  puts JSON.generate(Cnpj::Alfanumerico.split(value))
+else
+  warn "Usage: cnpj-alfanumerico [validate|generate|format|split] VALUE"
+  exit 1
+end
