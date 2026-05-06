@@ -20,8 +20,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
-        ruby-version: ["2.7", "3.0", "3.2"]
+        ruby-version: ["2.7", "3.0", "3.2", "3.3", "3.4"]
 
     steps:
     - uses: actions/checkout@v4

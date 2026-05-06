@@ -2,6 +2,16 @@
 
 Gem Ruby para validar, calcular, gerar e formatar CNPJ numérico e alfanumérico conforme as regras publicadas pela Receita Federal para vigência a partir de julho de 2026.
 
+## Compatibilidade
+
+- Ruby `2.7`
+- Ruby `3.0`
+- Ruby `3.2`
+- Ruby `3.3`
+- Ruby `3.4`
+
+O projeto usa apenas recursos básicos da linguagem e mantém CI para versões modernas do Ruby MRI.
+
 ## Instalação
 
 ```bash
@@ -49,10 +59,10 @@ exe/cnpj-alfanumerico generate 12ABC34501DE
 
 ```bash
 gem build cnpj-alfanumerico.gemspec
-gem push cnpj-alfanumerico-0.1.0.gem
+gem push cnpj-alfanumerico-0.1.1.gem
 ```
 
-Antes de publicar, ajuste `homepage` e metadados do `.gemspec` conforme o repositório final.
+Para release automatizada via GitHub Actions, publique uma tag no formato `vX.Y.Z` que corresponda exatamente a `Cnpj::Alfanumerico::VERSION`.
 
 ## Referências
 
