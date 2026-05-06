@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.2
+
+- Simplifica a execução do CI para rodar testes sem depender de Bundler no GitHub Actions.
+- Alinha a próxima tag de release com os workflows corrigidos de teste e publicação.
+
 ## 0.1.1
 
 - Adiciona `Gemfile` para integração mais previsível com Bundler e GitHub Actions.
