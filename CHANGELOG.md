@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.3
+
+- Atualiza os workflows do GitHub Actions para `actions/checkout@v5` e `ruby/setup-ruby@v1`.
+- Corrige compatibilidade do CI com `ubuntu-24.04` e versões Ruby `3.3` e `3.4`.
+- Mantém o fluxo de release baseado em tag com a infraestrutura de CI já corrigida.
+
 ## 0.1.2
 
 - Simplifica a execução do CI para rodar testes sem depender de Bundler no GitHub Actions.

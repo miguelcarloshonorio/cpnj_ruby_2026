@@ -59,7 +59,7 @@ exe/cnpj-alfanumerico generate 12ABC34501DE
 
 ```bash
 gem build cnpj-alfanumerico.gemspec
-gem push cnpj-alfanumerico-0.1.2.gem
+gem push cnpj-alfanumerico-0.1.3.gem
 ```
 
 Para release automatizada via GitHub Actions, publique uma tag no formato `vX.Y.Z` que corresponda exatamente a `Cnpj::Alfanumerico::VERSION`.
