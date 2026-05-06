@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.4
+
+- Passa a usar o environment `PROD` no workflow de publish para consumir `RUBYGEMS_AUTH_TOKEN` com escopo explícito.
+- Alinha a próxima tag de release ao fluxo final de publicação automática no RubyGems.
+
 ## 0.1.3
 
 - Atualiza os workflows do GitHub Actions para `actions/checkout@v5` e `ruby/setup-ruby@v1`.
