@@ -30,6 +30,5 @@ jobs:
       uses: ruby/setup-ruby@55283cc23133118229fd3f97f9336ee23a179fcf # v1.146.0
       with:
         ruby-version: ${{ matrix.ruby-version }}
-        bundler-cache: true
     - name: Run tests
-      run: bundle exec rake
+      run: ruby -Ilib:test test/cnpj_alfanumerico_test.rb
