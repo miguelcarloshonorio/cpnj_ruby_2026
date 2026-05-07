@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.5
+
+- Corrige o empacotamento da gem para incluir os arquivos em `lib/cnpj/**`.
+- Resolve o `LoadError` ao carregar a gem em projetos Rails e Ruby `3.4`.
+
 ## 0.1.4
 
 - Passa a usar o environment `PROD` no workflow de publish para consumir `RUBYGEMS_AUTH_TOKEN` com escopo explícito.

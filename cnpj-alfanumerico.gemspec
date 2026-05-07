@@ -17,7 +17,12 @@ Gem::Specification.new do |spec|
   spec.metadata["changelog_uri"] = "#{spec.homepage}/blob/main/CHANGELOG.md"
   spec.metadata["rubygems_mfa_required"] = "true"
 
-  spec.files = Dir.glob("{lib,test,exe,README.md,LICENSE,CHANGELOG.md}**/*").select { |path| File.file?(path) }
+  spec.files = Dir.chdir(__dir__) do
+    tracked_files = `git ls-files -z`.split("\x0")
+    tracked_files.select do |path|
+      path.start_with?("exe/", "lib/") || %w[CHANGELOG.md LICENSE README.md].include?(path)
+    end
+  end
   spec.bindir = "exe"
   spec.executables = ["cnpj-alfanumerico"]
   spec.require_paths = ["lib"]
